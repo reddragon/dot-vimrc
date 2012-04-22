@@ -24,8 +24,8 @@ endfunction
 " Do the basic stuff for all
 autocmd FileType c,cpp,java,python,javascript,make,tex call SetCommonDefaults()
 
-" I like my C, CPP code to be like this
-autocmd FileType c,cpp call SetExpandTab() | call SetShiftWidth(2) | call SetTabStop(2)
+" Tabs = 4 Spaces, Shift Width = 4
+autocmd FileType c,cpp,javascript call SetExpandTab() | call SetShiftWidth(4) | call SetTabStop(4)
 
 " And python likes tabs
 autocmd FileType python call SetTabStop(4) | call SetShiftWidth(2)
