@@ -25,7 +25,10 @@ endfunction
 autocmd FileType c,cpp,java,python,javascript,make,tex call SetCommonDefaults()
 
 " Tabs = 4 Spaces, Shift Width = 4
-autocmd FileType c,cpp,javascript call SetExpandTab() | call SetShiftWidth(4) | call SetTabStop(4)
+autocmd FileType javascript call SetExpandTab() | call SetShiftWidth(4) | call SetTabStop(4)
+
+" Tabs = 2 Spaces, Shift Width = 2
+autocmd FileType c,cpp call SetExpandTab() | call SetShiftWidth(2) | call SetTabStop(2)
 
 " And python likes tabs
 autocmd FileType python call SetTabStop(4) | call SetShiftWidth(2)
